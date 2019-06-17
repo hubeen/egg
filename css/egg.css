@@ -1,0 +1,176 @@
+body {
+  background: #2DC2E0;
+}
+.egg {
+  position: fixed;
+  top: 80%;
+  left: 86%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        width: 200px;
+      height: 250px;
+    background: #FFF;
+  border-top-left-radius: 50% 60%;
+  border-top-right-radius: 50% 60%;
+  border-bottom-left-radius: 50% 40%;
+  border-bottom-right-radius: 50% 40%;
+  box-shadow: inset -10px -5px #EAEFDD;
+  -webkit-animation: wobble 8s linear infinite;
+          animation: wobble 8s linear infinite;
+        -webkit-transform-origin: 0 50%;
+              transform-origin: 0 50%;
+          }
+          .egg .yolk {
+            position: absolute;
+          bottom: 20px;
+        left: 50%;
+      -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+          width: 130px;
+        height: 130px;
+      background: #FFDF50;
+    border-radius: 100%;
+  box-shadow: inset -5px -5px #F1AD41;
+}
+.egg .yolk .face .eyes {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+        display: -webkit-box;
+      display: -ms-flexbox;
+    display: flex;
+}
+.egg .yolk .face .eyes:before,
+.egg .yolk .face .eyes:after {
+  display: block;
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #884E2C;
+  border-radius: 100%;
+  margin: 0 30px;
+}
+.egg .yolk .face .mouth {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+        width: 40px;
+      height: 20px;
+    background: #884E2C;
+  border-radius: 15px 15px 70px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+            justify-content: center;
+          -webkit-box-align: end;
+            -ms-flex-align: end;
+                  align-items: flex-end;
+              }
+              .egg .yolk .face .mouth:after {
+                display: block;
+              content: '';
+            width: 20px;
+          height: 8px;
+        background: #CD5B4D;
+      border-radius: 5px 5px 100% 100%;
+    margin-bottom: 2px;
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+            transform: rotate(0deg) translate(-50%, -50%);
+      }
+    25% {
+    -webkit-transform: rotate(7.78574165deg) translate(-50%, -50%);
+            transform: rotate(7.78574165deg) translate(-50%, -50%);
+      }
+    75% {
+    -webkit-transform: rotate(-13.50303421deg) translate(-50%, -50%);
+            transform: rotate(-13.50303421deg) translate(-50%, -50%);
+      }
+    100% {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+            transform: rotate(0deg) translate(-50%, -50%);
+      }
+  }
+  @keyframes wobble {
+    0% {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+            transform: rotate(0deg) translate(-50%, -50%);
+      }
+    25% {
+    -webkit-transform: rotate(7.78574165deg) translate(-50%, -50%);
+            transform: rotate(7.78574165deg) translate(-50%, -50%);
+      }
+    75% {
+    -webkit-transform: rotate(-13.50303421deg) translate(-50%, -50%);
+            transform: rotate(-13.50303421deg) translate(-50%, -50%);
+      }
+    100% {
+    -webkit-transform: rotate(0deg) translate(-50%, -50%);
+            transform: rotate(0deg) translate(-50%, -50%);
+      }
+  }
+
+
+div.check {
+    height: 270px;
+    padding-top: 10px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 5%;
+}
+div.check p {
+    color: #fff;
+    font-weight:800;
+    font-size: 36px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+form.eggform {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+input.code-input {
+    height: 80px;
+    vertical-align: middle;
+    width: 420px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    color: #2DC2E0;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: 1px solid #2DC2E0;
+}
+input.code-input::-webkit-input-placeholder {
+    font-size: 38px;
+    color: #2DC2E0;
+}
+button.snd-btn {
+    width: 170px;
+    height: 70px;
+    cursor:pointer;
+    font-size: 15px;
+    background: #2DC2E0;  
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    -webkit-border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    border-radius: 80% 80% 80% 80% / 80% 80% 80% 80%;
+    margin-top: 5%;
+}
+
+
